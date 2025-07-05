@@ -12,7 +12,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Echo message handler
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
-    await update.message.reply_text(f"You said: {text}")
+    await update.message.reply_text(f"Tu hai detto: {text}")
 
 # Main app
 app = ApplicationBuilder().token(TOKEN).build()
